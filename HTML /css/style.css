@@ -1,0 +1,34 @@
+.welcome{
+
+}
+
+div{
+    border: 1px solid rgb(236, 236, 236);
+    padding: 1px;
+    margin:5px;
+}
+
+.spanTest{
+    border: 1px solid rgb(236, 236, 236);
+    padding: 1px;
+    margin:5px;
+}
+
+div.navigationClass nav ul li {
+    list-style-type: none;
+    float: left;
+    padding: 5px;
+}
+
+div.navigationClass nav ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.myClassDiv{
+    border: 1px solid #000000;
+}
+
+.myClassSpan{
+    border: 1px solid #CCCCCC;
+}
