@@ -2,7 +2,7 @@
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
 {\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
 {\*\expandedcolortbl;;\csgray\c0;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\paperw11900\paperh16840\margl1440\margr1440\vieww16380\viewh13760\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
 \f0\fs24 \cf0 \
@@ -23,4 +23,78 @@
 	git push -u origin shams \
 \
 \
-	}
+	\
+\
+====================\
+Single source of truth => (Git checkout main) => Git pull from main => to take latest changes\
+\
+Git checkout shams\
+\
+Merge every time\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97 Have the main\'92s changes in the main branch \'97\'97\'97\'97\'97\
+Merge Main\'92s changes with my branch ==> taking the latest code from main and merging (main has he latest code)\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+git merge main ===> shams with main\
+\
+\
+\
+========save your temporary changes -> git stash ===============\
+\
+\
+\
+\
+What did we do today?\
+\
+We created 2 branches - Shams & Pawan (Branches are created from Main)\
+\
+Pawan starts working:\
+	pull the changes from main\
+    Git conflict merge it\
+    He did his changes and staged/committed/pushed\
+	He raised a PR adding Abhishek as a reviewer\
+    Abhishek reviewed and gave some review comments\
+    Pawan went ahead and fixed those changes asked\
+    He staged/committed/pushed\
+    it will add on to the same PR because Pawan is on the same branch (i.e. pawan)\
+    Abhishek gets a notification and he found everything to be ok and he commented the same and merged changed.\
+\
+    PR is raise between (source: pawan) ===> main\
+\
+\
+\
+	The next day:\
+\
+	Shams is starting his work\
+	git checkout main\
+	git pull in main\
+    Git checkout shams\
+    Git merge main (shams<>main)\
+	git conflict\
+	current changes / incoming changes - edit your file and stage (git add \'97all) them again\
+	git commit -m \'93asdsadds\'94\
+    Git push (pushing in to shams)\
+    Shams makes his own changes \
+    stage/commit/push - shams local/main to origin/main\
+    He raises a PR / get it reviewed /make some change (as per the review comments)\
+    Stage/commit/push - shams branch\
+    PR will automatically track and have that those new changes\
+    Reviewer gets a notification\
+    He puts a comment or approve it\
+    Merge is done between (source:shams) ===> main\
+\
+\
+	Main is again updated ===>. Single source of truth\
+  \
+    \
+    \
+\
+\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\
+}
