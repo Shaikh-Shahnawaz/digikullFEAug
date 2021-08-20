@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 1024px;
+    /*margin: top right bottm left;*/
+    /*margin: top/bottm right/left;*/
+    margin: 0 auto;
+}
+
+.container .containerChild{
+    border: 3px dashed #726f6ea6;
+    margin:20px 0 0 0;
+    padding: 20px 10px 20px 10px;
+    height: 200px;
+    /* border-width:5px;
+    border-style: dashed;
+    border-color: #000000; */
+}
+
+.container #secretText{
+    border:3px solid black;
+}
+
+.fontSizeLarge{
+    font-size: 20px;
+}
+
+.standardContent{
+    padding:10px;
+    border: 1px solid #e1e1e1;
+}
+
+.standardContent .standardInputSpan{
+    display: block;
+    float: left;
+}
+
+.standardInput{
+    margin-top: 10px;
+}
+
+.standardInputText input{
+    border: 1px solid #CCCCCC;
+}
+
+
