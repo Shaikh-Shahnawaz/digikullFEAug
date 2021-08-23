@@ -9,18 +9,39 @@
         .container{
             width: 1024px;
             margin: 0 auto;
+            border: 1px solid grey;
+            position: relative;
         }
 
         .divA{
             height: 300px;
             width: 300px;
             border:1px solid red;
+            position: absolute;
+            background-color: cornsilk;
+            z-index: 10;
         }
 
         .divB{
             height: 300px;
             width: 300px;
             border:1px solid blue;
+            background-color: lightgray;
+            position: absolute;
+            top:100px;
+            left:100px;
+            z-index: 20;
+        }
+
+        .divC{
+            height: 300px;
+            width: 300px;
+            border:1px solid blue;
+            background-color: #f2f2f2;
+            position: absolute;
+            top:150px;
+            left:150px;
+            z-index: 30;
         }
 
     </style>
@@ -29,6 +50,7 @@
     <div class="container">
         <div class="divA"></div>
         <div class="divB"></div>
+        <div class="divC"></div>
     </div>
 </body>
 </html>
