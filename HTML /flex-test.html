@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .containerABC{
+            display: flex;
+            flex-flow:row wrap; 
+            /* flex-direction flex-wrap */
+            align-content: space-evenly; /*cross axis*/
+            justify-content: space-evenly; /*main axis*/ 
+            height: 300px;
+        }
+
+        .item-child{
+            flex-grow: 3;   
+            flex-shrink: 3;
+            flex-basis:300px;
+        }
+
+        .item-child.childSpecific{
+            height: 500px;
+        }
+
+        .itemContainer{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center; /* cross axis*/
+            margin: 0;
+            padding: 0;
+        }
+
+        .items{
+            
+        }
+        
+        .item1{
+            flex-basis: 200px; /* this will work as the width of the element if there no flex grow on the main axis*/
+            background-color: black;
+            color: white;
+            font-weight: 900;
+        }
+
+        .item2{
+            flex-basis: 300px;  /* this will work as the width of the element if there no flex grow on the main axis*/
+        }
+
+        .wrapText{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="containerABC">
+        <div class="item-child">
+            Lorem Ipsum 
+        </div>
+        <div class="item-child">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        <div class="item-child">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        <div class="item-child childSpecific">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        <div class="item-child">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        <div class="item-child">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+    </div> -->
+
+    <div class="itemContainer">
+        <div class="items item1">Digikull August DigikullDigikullDigikullDigikullDigikullDigikullDigikull August DigikullDigikullDigikullDigikullDigikullDigikullDigikull August DigikullDigikullDigikullDigikullDigikullDigikullDigikull</div>
+        <div class="items item2">August DigikullDigikullDigikullDigikullDigikullDigikullDigikull</div>
+        <div class="items item2">August DigikullDigikullDigikullDigikullDigikullDigikull</div>
+        <div class="items item2">August</div>
+    </div>
+
+    <div class="wrapText">
+        The remaining space is the size of the flex container minus the size of all flex items' sizes together. If all sibling items have the same flex grow factor, then all items will receive the same share of remaining space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
+    </div>
+</body>
+</html>

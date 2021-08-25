@@ -1,0 +1,50 @@
+*{ /*0*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.parentContainer  .childItem{
+    float: left;
+    /*width:360px;*/
+    width:25%;
+    height: 400px;
+    padding: 10px;
+    /*display: table-cell;
+    vertical-align: middle;  Only works if the elements are not floated*/
+}
+
+.parentContainer  .childItem.child2{
+    /*width:840px;*/ /*10,000*/
+}
+
+.parentContainer  .childItem.textCenter{
+    text-align: center;
+}
+
+.parentContainer .childItem p.textContent{
+    height: 400px;
+    line-height: 2;
+}
+
+
+/*
+    *{ //0
+
+    }
+
+    div{ //10-99
+
+    }
+
+    .class// 99-999
+
+    #id // 1000
+
+    style >1000
+
+    !important //10,000
+*/
